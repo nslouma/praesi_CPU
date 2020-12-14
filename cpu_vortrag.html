@@ -7,7 +7,7 @@
 
     <meta
       name="description"
-      content="Genossenschaften"
+      content="CPU"
     />
     <meta name="author" content="Aris, Dennis, Matthias, Matthias, Luiz" />
 
@@ -51,33 +51,144 @@
           data-background-opacity="0.15"
         >
           <h2>Was ist eine CPU?</h2>
+          <section>
+            <h3>
+              - verarbeitet alle Aufgaben<br>
+              - eines der wichtigsten Bestandteile des PC´s<br>
+              - er nutz RAM und alle zur Verfügung stehenden Rescourcen
+            </h3>
+          </section>
         </section>
 
         <!-- Folie 3 -->
-        <section data-transition="convex">
-          <h2>Bestandteile einer CPU</h2>
-          <section>
-          <section data-transition="convex">
-            <h3>Von-Neumann / Havard-Architektur</h3>
-            <img src="src/img/Proz1-d.png">
+        <section data-transition="convex" data-background="src/img/Proz1-d.png" data-background-opacity="0.15">
+          <p>Bestandteile einer CPU</p>
+            <section>
+              Bestandteile
+              <ul class="fragment">
+                <li class="fragment">
+                  - Rechenwerk /ALU(arithmetisch-logische Einheit)
+                </li>
+                <li class="fragment">
+                  - Steuerwerk
+                </li>
+                <li class="fragment">
+                  - Register
+                </li>
+                <li class="fragment">
+                  - Speichermanager
+                </li>
+                <li class="fragment">
+                  - Bus interface
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>Von-Neumann-Architektur/Referenzmodell</h3>
+              <p class="fragment">keine Trennung von Datenspeicher und Programmcode-Speicher</p>
+              <ul>
+                <li class="fragment">Programmcode ist einfacher zu bearbeiten da er wie normale daten betrachtet wird</li>
+                <li class="fragment">Ein Laufzeitfehler kann ausversehen Programmcode ändern</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Harvard Architektur/Referenzmodell</h3>
+              <p class="fragment">strikt von einander getrennte Speicher unter parallelen Bussystemen</p>
+              <ul>
+                <li class="fragment">
+                  schnellerer Programmcode Zugriff dank paralleler schaltung
+                </li>
+                <li class="fragment">
+                  sicherer da Programmcode nicht verändert wird
+                </li>
+              </ul>
+            </section>
           </section>
-          </section>
-        </section>
         
 
         <!-- Folie 4 -->
         <section data-transition="convex">
-          <h2>Prozessorarten</h2>
+          <section data-background="src/img/Mikroprozessor-201020415023.jpg" data-background-opacity="0.15">
+            <h2>Prozessorarten</h2>
+            <p>früher gab es verschiedene Prozessoren für verschiedene aufgaben</p>
+            <h3>
+              <ul>
+                <li class="fragment">
+                  - Grafikprozessor
+                </li>
+                <li class="fragment">
+                  - Soundprozessor
+                </li>
+                <li class="fragment">
+                  - etc.
+                </li>
+              </ul>
+            </h3>
+            <h3 class="fragment">Heute sind diese in einen Mikroprozessor zusammengefasst</h3>
+          </section>
+          <section data-background="src/img/arduino-a000066.jpg" data-background-opacity="0.15">
+            <p class="fragment">
+              <h4>Mikroprozessor</h4>
+            </p>
+            <p class="fragment">ist ein Prozessor der verschiede Aufgaben in eine Einheit zusammenfassen</p>
+            <p class="fragment">z.B. CPU eine PC´s</p>
+            <p class="fragment">
+              <h4>Microkonroller</h4>
+            </p>
+            <p class="fragment">sind Prozessoren die meist im Embedded Bereich vorkommen</p>
+            <p class="fragment">sind auf bestimmte Aufgaben und Prozesse spezialisiert</p>
+            <p class="fragment">arbeiten mit digitalen und analogen Ein- und Ausgangssignalen</p>
+          </section>
         </section>
 
         <!-- Folie 5 -->
-        <section data-transition="convex">
+        <section data-transition="convex" >
           <h2>Architekturen</h2>
+          <section data-background="src/img/id-64-bit-mikroprozessoren-lantek-mes-cad-cam-erp-software-it.jpg" data-background-opacity="0.15">
+            <p class="fragment">Prozessoren sind Heute an der von-Neumann-Architektur angelehnt</p>
+            <p class="fragment">sie nutzen jedoch auch Bestandteile der Harvard-Architektur</p>
+            <p class="fragment">Architekturen unterscheiden sich mehr nach Hersteller und ihrer Aufgabe</p>
+          </section> 
+          <section data-background="src/img/Q79MoJs5EtuPuEgbs.jpg" data-background-opacity="0.15">
+            <ul style="font-size: 20pt">
+              <li class="fragment">x86-Technik von AMD und Intel</li>
+              <li class="fragment">ARM</li>
+              <li class="fragment">PowerPC</li>
+              <li class="fragment">MIPS</li>
+              <li class="fragment">SPARC</li>
+              <li class="fragment">ARC</li>
+              <li class="fragment">AVR</li>
+              <li class="fragment">XTensa</li>
+              <li class="fragment">OpenRISC</li>
+              <li class="fragment">Open-SPARC</li>
+              <li class="fragment">OpenPOWER</li>
+              <li class="fragment">RISC-V</li>
+            </ul>
+          </section>
         </section>
 
         <!-- Folie 6 -->
-        <section data-transition="convex">
-          <h2>Multithreading</h2>
+        <section data-transition="convex" data-background="src/img/Qualcomm-Snapdragon-845-1024x690.jpg" data-background-opacity="0.15">
+          <h2>Prozessortechnik</h2>
+          <section>
+            <h4>scheinbar einfaches Gesetz</h4>
+            <ul>
+              <li class="fragment">optimierung des internen Aufbaus</li>
+              <li class="fragment">verkleinerung von Strukturen</li>
+              <li class="fragment">Betriebsspannung senken</li>
+              <li class="fragment">Taktfrequenz erhöhen</li>
+              <li class="fragment">Herstellungsprozess verbessern</li>
+            </ul>
+            <p class="fragment">Dieses Gesetz trifft mitlerweile auf physikalische Grenzen</p>
+            <p class="fragment" style="font-size: 18pt">Baugröße muss verkleinert werden z.B. 14>7nm</p>
+          </section>
+          <section>
+            <p>Multithreading</p>
+            <p class="fragment">Mehrere gleiche Funktionsblöcke</p>
+            <p class="fragment">Blöcke können parallel arbeiten</p>
+            <p class="fragment">große Aufgaben werden aufgeteilt auf verschiedene Blöcke</p>
+            <p class="fragment">Rechengeschwindigkeit wird erhöht</p>
+          </section>
         </section>
 
         <!-- Folie 7 -->
@@ -86,10 +197,16 @@
         </section>
 
         <!-- Folie 8 -->
-        <section data-transition="convex">
+        <section data-transition="convex" data-background="src/img/source-2147529_1920-1024x683.jpg" data-background-opacity="0.15">
           <h2>
-
+              Quellen
           </h2>
+          <ul style="font-size: 25pt">
+            <li class="fragment">https://www.elektronik-kompendium.de/sites/com/0309161.html</li>
+            <li class="fragment">https://de.wikipedia.org/wiki/Prozessor#Aufbau_/_Funktionale_Einheiten</li>
+            <li class="fragment">https://www.it-business.de/was-ist-cpu-a-674818/</li>
+            <li class="fragment">https://techterms.com/definition/cpu</li>
+          </ul>
         </section>
 
       </div>
